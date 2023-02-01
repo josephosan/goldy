@@ -1,3 +1,17 @@
+@font-face {
+  direction: rtl;
+  font-family:'Sahel';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/Sahel.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+  url('./assets/fonts/Sahel.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('./assets/fonts/Sahel.ttf') format('truetype');
+}
+
+html, body, .App {
+  background-color: #ffffff;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +49,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.my-footer div, h3, h5, p, li, ul {
+  direction: rtl;
+  text-align: center;
+}
+
+
+li {
+  padding: 0.5rem;
 }
