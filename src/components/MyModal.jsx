@@ -44,8 +44,11 @@ export default function MyModal({ actualPrice, fakePrice, modalState, onCloseMod
 
           <div className="alert alert-warning">
             <h5>قیمتی که فروشنده ممکنه به اشتباه بگه:</h5>
-            <p className="mt-2"><span>{ parseInt(fakePrice) }</span> تومان</p>
-            <p>{ Num2persian(parseInt(fakePrice)) }  تومن</p>
+            <p className="mt-2"><span>{ parseInt(fakePrice.finalPrice1) }</span> تومان</p>
+            <p>{ Num2persian(parseInt(fakePrice.finalPrice1)) }  تومن</p>
+            {/* <hr />
+            <p className="mt-2"><span>{ parseInt(fakePrice.finalPrice2) }</span> تومان</p>
+            <p>{ Num2persian(parseInt(fakePrice.finalPrice2)) }  تومن</p> */}
           </div>
         </div>
       </Modal>

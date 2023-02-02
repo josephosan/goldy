@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Form, Input, Button, message } from "antd";
+import { Form, Input, Button, message, Checkbox } from "antd";
 import "./inputs.scss";
 import MyModal from "./MyModal";
-import { actualPrice } from "../logic/calculations";
+import { actualPrice, fakePrice } from "../logic/calculations";
 import Num2persian from "num2persian";
 
 export default function Inputs() {
@@ -17,9 +17,18 @@ export default function Inputs() {
       parseFloat(values["gold-weight"]), 
       parseFloat(values["gold-price"]), 
       parseFloat(values["gold-emolument"]), 
-      parseFloat(values["gold-benefit"])
+      parseFloat(values["gold-benefit"]),
+      values.tax
+    );
+    let Fp = fakePrice(
+      parseFloat(values["gold-weight"]), 
+      parseFloat(values["gold-price"]), 
+      parseFloat(values["gold-emolument"]), 
+      parseFloat(values["gold-benefit"]),
+      values.tax
     );
     setActualP(Ap);
+    setFakeP(Fp);
     setErr(null);
     setModalState(true);
   };
@@ -216,7 +225,19 @@ export default function Inputs() {
         >
           <Input placeholder="به درصد (مثلا: ۷)" onBlur={onBenefitBlur}/>
         </Form.Item>
-          <br />
+        <br />
+        <Form.Item
+          className="d-flex justify-content-right"
+          name="tax"
+          valuePropName="checked"
+          wrapperCol={{
+            offset: 8,
+            span: 16,
+          }}
+        >
+        <Checkbox>احتساب ۹ درصد مالیات</Checkbox>
+        </Form.Item>
+        <br />
         <Form.Item
           wrapperCol={{
             offset: 8,
@@ -225,7 +246,7 @@ export default function Inputs() {
         >
         <MyModal
           actualPrice={actualP}
-          fakePrice={"100"}
+          fakePrice={fakeP}
           modalState={modalState}
           onCloseModal={onCloseModal} />
       
