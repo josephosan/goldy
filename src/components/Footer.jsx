@@ -22,7 +22,7 @@ export default function Footer() {
                   <a href="https://github.com/josephosan" target="_black" className="text-white">گیت هاب من</a>
                 </li>
                 <li>
-                  <a href="#!" target="_black" className="text-white">کد پروژه</a>
+                  <a href="https://github.com/josephosan/goldy" target="_black" className="text-white">کد پروژه</a>
                 </li>
               </ul>
             </div>
