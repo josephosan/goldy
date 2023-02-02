@@ -3,7 +3,14 @@ import Inputs from "./components/Inputs";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
 
+
 function App() {
+  useEffect(() => {
+    document.head.innerHTML+=`
+    <meta name='description' content='گولدی'/>
+    <meta name='keywords' content='گولدی'/>
+    `
+  }, []);
   return (
     <div className="App">
       <div className='container-sm mt-5 d-flex justify-content-center align-items-center'>

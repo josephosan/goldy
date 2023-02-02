@@ -6,11 +6,12 @@ import Num2persian from "num2persian";
 
 export default function MyModal({ actualPrice, fakePrice, modalState, onCloseModal }) {
   const [modal, setmodal] = useState(false);
-
+  
   useEffect(() => {
     setmodal(modalState);
   }, [modalState])
-
+  
+  if(!actualPrice || !fakePrice) return;
 
   const handleClose = () => {
     setmodal(false);
