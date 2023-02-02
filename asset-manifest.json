@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/goldy/static/css/main.5abc5a6b.css",
+    "main.js": "/goldy/static/js/main.69fabdf0.js",
+    "static/js/787.b8b20f38.chunk.js": "/goldy/static/js/787.b8b20f38.chunk.js",
+    "static/media/Sahel.ttf": "/goldy/static/media/Sahel.72ea6df7f4ff1b801942.ttf",
+    "static/media/Sahel.woff": "/goldy/static/media/Sahel.82db17de375bd838d4bc.woff",
+    "static/media/Sahel.woff2": "/goldy/static/media/Sahel.1a2efbcab5a0d61e5c0f.woff2",
+    "index.html": "/goldy/index.html",
+    "main.5abc5a6b.css.map": "/goldy/static/css/main.5abc5a6b.css.map",
+    "main.69fabdf0.js.map": "/goldy/static/js/main.69fabdf0.js.map",
+    "787.b8b20f38.chunk.js.map": "/goldy/static/js/787.b8b20f38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5abc5a6b.css",
+    "static/js/main.69fabdf0.js"
+  ]
+}
